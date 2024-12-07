@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh:mappings
+	xmlns:sitemesh="http://www.sitemesh.org/sitemesh-3.0">
+	<!-- Áp dụng layout chung cho toàn bộ ứng dụng -->
+	<sitemesh:mapping path="/*" decorator="/webapp/WEB-INF/views/main_layout.jsp" />
+</sitemesh:mappings>

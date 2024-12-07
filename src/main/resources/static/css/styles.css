@@ -1,0 +1,63 @@
+/* Reset margin và padding mặc định */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Ngăn cuộn ngang */
+}
+
+/* Ngăn cuộn vượt mức */
+html {
+    overscroll-behavior: none; /* Ngăn hiện tượng kéo vượt mức */
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Nền màu trắng */
+    color: #000000; /* Chữ màu đen */
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    min-height: 100vh; /* Chiều cao tối thiểu bao phủ toàn màn hình */
+}
+
+/* Sticky Header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ưu tiên hiển thị */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Custom Dark Green */
+.bg-dark-green {
+    background-color: #013220 !important; /* Dark Green */
+    color: #ffffff !important; /* Chữ màu trắng */
+}
+
+/* Button styling */
+.btn {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn:hover {
+    color: #000000; /* Màu đen khi hover */
+    background-color: #ffffff; /* Nền trắng khi hover */
+}
+
+/* Footer */
+footer {
+    background-color: #013220 !important; /* Dark Green */
+    color: #ffffff !important; /* Chữ màu trắng */
+    line-height: 1.5;
+    height: 15cm; /* Chiều cao Footer */
+    margin-top: auto; /* Đẩy footer xuống cuối trang */
+    flex-shrink: 0; /* Ngăn footer co lại nếu nội dung ngắn */
+}
+
+/* Carousel */
+.carousel-inner img {
+    object-fit: cover; /* Ảnh vừa khung */
+    max-height: 500px; /* Giới hạn chiều cao ảnh */
+}
