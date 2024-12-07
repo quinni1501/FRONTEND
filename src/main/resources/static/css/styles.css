@@ -6,7 +6,7 @@ html, body {
     overflow-x: hidden; /* Ngăn cuộn ngang */
 }
 
-/* Ngăn cuộn vượt mức */
+/* Ngăn cuộn quá mức (overscroll) */
 html {
     overscroll-behavior: none; /* Ngăn hiện tượng kéo vượt mức */
 }
@@ -27,6 +27,7 @@ body {
     top: 0;
     z-index: 1020; /* Ưu tiên hiển thị */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    flex-shrink: 0; /* Ngăn header bị co */
 }
 
 /* Custom Dark Green */
@@ -35,15 +36,16 @@ body {
     color: #ffffff !important; /* Chữ màu trắng */
 }
 
-/* Button styling */
-.btn {
-    font-size: 0.9rem;
-    padding: 0.25rem 0.5rem;
+/* Nút điều hướng */
+.btn-hover {
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Hiệu ứng hover cho chữ */
+    color: #ffffff; /* Màu chữ mặc định */
 }
 
-.btn:hover {
-    color: #000000; /* Màu đen khi hover */
-    background-color: #ffffff; /* Nền trắng khi hover */
+.btn-hover:hover {
+    color: #cccccc; /* Màu chữ chuyển sang xám khi hover */
+    text-decoration: none; /* Loại bỏ gạch chân */
 }
 
 /* Footer */

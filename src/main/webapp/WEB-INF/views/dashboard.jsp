@@ -14,15 +14,15 @@
 <body class="bg-white text-dark">
 
     <!-- Header -->
-    <header class="sticky-header bg-dark-green text-white d-flex align-items-center" style="height: 5cm;">
+    <header class="sticky-header bg-dark-green text-white d-flex align-items-center" style="height: 2cm;">
         <div class="container d-flex justify-content-between align-items-center">
             <!-- Tiêu đề -->
             <h1 class="m-0 fs-4">UTE Football</h1>
 
             <!-- Nút điều hướng -->
             <div>
-                <a href="/login" class="btn btn-light btn-sm me-2">Đăng nhập</a>
-                <a href="/register" class="btn btn-light btn-sm">Đăng ký</a>
+                <a href="/login" class="text-white me-3 text-decoration-none btn-hover">Đăng nhập</a>
+                <a href="/register" class="text-white text-decoration-none btn-hover">Đăng ký</a>
             </div>
         </div>
     </header>
